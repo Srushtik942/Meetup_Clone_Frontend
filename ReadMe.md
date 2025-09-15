@@ -1,51 +1,58 @@
-Meetup Clone Frontend
+# Meetup Clone Frontend
 
 A React-based frontend for the Meetup Clone project. This app allows users to view event details, search events by title, and RSVP, among other features.
 
-Features
+---
 
-View event details (name, host, image, date/time, location, tags, etc.)
+## Table of Contents
 
-Search events by title (via search bar in header or a search page)
+- [Features](#features)
+- [Tech Stack](#tech-stack)
+- [Getting Started](#getting-started)
+- [Folder Structure](#folder-structure)
+- [Environment Variables](#environment-variables)
+- [Available Scripts](#available-scripts)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
 
-Responsive UI with layout for both large and small screens
+---
 
-RSVP button (front-end component)
+## Features
 
-Footer that sticks to bottom
+- View event details (name, host, image, date/time, location, tags, etc.)
+- Search events by title (via search bar in header or a search page)
+- Responsive UI with layout for both large and small screens
+- RSVP button (front-end component)
+- Footer that sticks to bottom
 
-Tech Stack
+---
 
-React (Vite)
+## Tech Stack
 
-React Router DOM
+- React (Vite)
+- React Router DOM
+- JavaScript (ES6+)
+- CSS (or Bootstrap classes)
+- Fetch API for HTTP requests
 
-JavaScript (ES6+)
+---
 
-CSS (or Bootstrap classes)
+## Getting Started
 
-Fetch API for HTTP requests
+1. **Clone the repository**
 
-Getting Started
+   ```bash
+   git clone https://github.com/Srushtik942/Meetup_Clone_Frontend.git
+   cd Meetup_Clone_Frontend
 
-Clone the repository
+2. Install Dependencies
 
-git clone https://github.com/Srushtik942/Meetup_Clone_Frontend.git
-cd Meetup_Clone_Frontend
+   npm install
+   npm run dev
+   npm run build
 
-Install dependencies
-
-npm install
-
-Run the development server
-
-npm run dev
-
-Build for production
-
-npm run build
-
-Folder Structure
+3. Folder Structure
 
 Meetup_Clone_Frontend/
 ├── public/
