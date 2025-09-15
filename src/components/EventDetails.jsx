@@ -43,7 +43,7 @@ const EventDetails = () => {
     <>
       <Header />
       <div
-        className="bg-light container my-5"
+        className="bg-light  my-5"
         style={{
           maxWidth: "1200px",
           margin: "2rem auto",
@@ -99,7 +99,7 @@ const EventDetails = () => {
                 </p>
                 <p>
                   <span style={{ fontWeight: "bold" }}>Age Restrictions: </span>
-                  {eventData.additionalInformation.age}
+                  {eventData.additionalInformation.age} & above.
                 </p>
               </div>
             )}
