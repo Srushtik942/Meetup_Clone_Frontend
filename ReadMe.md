@@ -52,22 +52,3 @@ A React-based frontend for the Meetup Clone project. This app allows users to vi
    npm run dev
    npm run build
 
-3. Folder Structure
-
-Meetup_Clone_Frontend/
-├── public/
-│   └── index.html
-├── src/
-│   ├── components/
-│   │   ├── Header.jsx
-│   │   ├── EventDetails.jsx
-│   │   ├── EventSearch.jsx
-│   │   ├── Footer.jsx
-│   │   └── … other components
-│   ├── App.jsx
-│   ├── main.jsx
-│   └── styles/ (if any)
-├── .env
-├── package.json
-├── vite.config.js
-└── README.md
