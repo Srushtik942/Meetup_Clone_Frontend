@@ -16,7 +16,10 @@ const router = createBrowserRouter([
     path:"/eventDetails/:eventId",
     element:<EventDetails/>
   },
-    { path: "/search", element: <EventSearch /> }
+    {
+       path: "/search/:searchTerm",
+      element: <EventSearch />
+    }
 ]);
 
 

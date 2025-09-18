@@ -28,7 +28,7 @@ function App() {
     <>
       <Header />
       <div className="page-content">
-        <div className="py-5">
+        <div className="py-5 my-4">
           <select
             className="form-select w-auto"
             aria-label="Select event type"

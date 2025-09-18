@@ -81,7 +81,7 @@ const EventDetails = () => {
                 objectFit: "cover",
                 borderRadius: "16px",
               }}
-              src={eventData.meetImage}
+              src={eventData?.meetImage || "https://via.placeholder.com/350"}
               alt="Event"
             />
 

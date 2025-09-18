@@ -11,8 +11,7 @@ const Header = () => {
     e.preventDefault();
     const title = e.target.elements.search.value.trim();
     if (title) {
-      navigate(`/search?title=${title}`);
-    }
+         navigate(`/search/${title}`);    }
   };
 
   return (
