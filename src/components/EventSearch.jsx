@@ -2,6 +2,7 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import EventCard from "./EventCard";
+import Header from "./Header"
 
 const EventSearch = () => {
   const { searchTerm } = useParams();
@@ -29,9 +30,11 @@ const EventSearch = () => {
   if (loading) return <p>Loading…</p>;
 
   return (
-    <div className="container my-4">
-      <h3>Search results for “{searchTerm}”</h3>
-      <div className="d-flex flex-wrap gap-3">
+    <div className="container ">
+      {/* <h3>Search results for “{searchTerm}”</h3> */}
+   <Header/>
+
+      <div className="pt-20 d-flex flex-wrap gap-3 mt-24 bg-red">
         {searchResults.length > 0 ? (
           searchResults.map((event) => (
             <EventCard key={event._id} {...event} />

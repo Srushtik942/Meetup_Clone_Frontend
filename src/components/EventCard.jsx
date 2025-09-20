@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const EventCard = ({ _id, type, meetImage, date, time, eventName, host }) => {
   return (
-    <div className="card position-relative" style={{ width: "18rem" }}>
+    <div className="card position-relative " style={{ width: "18rem" }}>
       <span
         className="badge bg-danger position-absolute top-0 end-0 m-2"
         style={{ zIndex: 1 }}
