@@ -6,7 +6,7 @@ import "./App.css";
 import { data } from "react-router-dom";
 
 function App() {
-  const [eventType, setEventType] = useState("All Event");
+  const [eventType, setEventType] = useState("Both");
   const [events, setEvents] = useState([]);
 
   useEffect(()=>{
@@ -20,7 +20,7 @@ function App() {
   },[]);
 
   const filteredData = events.filter((event)=>{
-    if(eventType === "All Event") return true;
+    if(eventType === "Both") return true;
     return event.eventType === eventType;
   });
 
