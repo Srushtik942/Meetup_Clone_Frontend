@@ -1,10 +1,21 @@
-// EventCard.jsx
 import { Link } from "react-router-dom";
 
-
 const EventCard = ({ _id, type, meetImage, date, time, eventName, host }) => {
+  const formattedDate = new Date(date).toLocaleDateString("en-US", {
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+  });
+
+  const formattedTime = time
+    ? time
+    : new Date(date).toLocaleTimeString("en-US", {
+        hour: "2-digit",
+        minute: "2-digit",
+      });
+
   return (
-    <div className="card position-relative " style={{ width: "18rem" }}>
+    <div className="card position-relative" style={{ width: "18rem" }}>
       <span
         className="badge bg-danger position-absolute top-0 end-0 m-2 mt-10"
         style={{ zIndex: 1 }}
@@ -12,17 +23,16 @@ const EventCard = ({ _id, type, meetImage, date, time, eventName, host }) => {
         {type}
       </span>
       <img src={meetImage} className="card-img-top" alt={type} />
-      <div className="card-body">
-        <p className="card-text">{eventName}</p>
+      <div className="card-body text-center">
+        <p className="card-text fw-bold">{eventName}</p>
         <p className="card-text">
-          {date} {time}
+          {formattedDate} <br /> {formattedTime}
         </p>
-        <p className="card-text bg-danger text-white rounded-1 px-2">
+        <p className="card-text bg-danger text-white rounded-1 px-2 d-inline-block">
           Host: {host}
         </p>
-
-        {/* only go to details when user clicks this button */}
-        <Link to={`/eventDetails/${_id}`} className="btn btn-danger">
+        <br />
+        <Link to={`/eventDetails/${_id}`} className="btn btn-danger mt-2">
           Go to details
         </Link>
       </div>
