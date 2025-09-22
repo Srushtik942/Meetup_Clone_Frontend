@@ -30,20 +30,18 @@ const EventSearch = () => {
   if (loading) return <p>Loading…</p>;
 
   return (
-    <div className="container ">
-      {/* <h3>Search results for “{searchTerm}”</h3> */}
-   <Header/>
-
-      <div className="pt-20 d-flex flex-wrap gap-3 mt-24 bg-red">
-        {searchResults.length > 0 ? (
-          searchResults.map((event) => (
-            <EventCard key={event._id} {...event} />
-          ))
-        ) : (
-          <p>No events found.</p>
-        )}
-      </div>
-    </div>
+    <div className="container">
+  <Header />
+  <div className="mt-5 pt-4 d-flex flex-wrap gap-3">
+    {searchResults.length > 0 ? (
+      searchResults.map((event) => (
+        <EventCard key={event._id} {...event} />
+      ))
+    ) : (
+      <p>No events found.</p>
+    )}
+  </div>
+</div>
   );
 };
 

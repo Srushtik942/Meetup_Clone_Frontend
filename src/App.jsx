@@ -35,10 +35,9 @@ function App() {
             value={eventType}
             onChange={(e) => setEventType(e.target.value)}
           >
-            <option value="All Event">All Event</option>
-            <option value="Workshop">Workshop</option>
-            <option value="Seminar">Seminar</option>
-            <option value="Meetup">MeetUp</option>
+            <option value="Both">Both</option>
+            <option value="Offline">Offline</option>
+            <option value="Online">Online</option>
           </select>
         </div>
       </div>

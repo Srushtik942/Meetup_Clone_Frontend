@@ -106,7 +106,7 @@ const EventDetails = () => {
 
             <div>
               <h5 style={{ fontWeight: "bold" }}>Event Tags:</h5>
-              <div style={{ display: "flex", gap: "0.5rem", flexWrap: "wrap" }}>
+              <div style={{ display: "flex", gap: "0.5rem", flexWrap: "wrap" }} className="mt-4 mx-5 item-center" >
                 {eventData.tags.map((tag, index) => (
                   <span
                     key={index}
@@ -117,6 +117,7 @@ const EventDetails = () => {
                       borderRadius: "12px",
                       fontWeight: "bold",
                       fontSize: "0.9rem",
+
                     }}
                   >
                     {tag}

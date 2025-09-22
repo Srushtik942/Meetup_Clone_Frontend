@@ -6,7 +6,7 @@ const EventCard = ({ _id, type, meetImage, date, time, eventName, host }) => {
   return (
     <div className="card position-relative " style={{ width: "18rem" }}>
       <span
-        className="badge bg-danger position-absolute top-0 end-0 m-2"
+        className="badge bg-danger position-absolute top-0 end-0 m-2 mt-10"
         style={{ zIndex: 1 }}
       >
         {type}
